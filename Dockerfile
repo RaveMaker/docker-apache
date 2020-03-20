@@ -1,7 +1,6 @@
-FROM php:7-apache
+FROM php:apache
 
 # install smtp
 RUN apt-get update && apt-get install msmtp -y
-RUN rm -rf /var/lib/apt/lists/*
 
 RUN echo 'sendmail_path = "/usr/sbin/msmtp -t"' > /usr/local/etc/php/conf.d/sendmail.ini
