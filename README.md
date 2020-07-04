@@ -14,7 +14,7 @@ docker-compose file includes:
 3. create `msmtp/msmtprc` from `msmtp/msmtprc.example`
 4. copy one of the docker-compose (dev/traefik) templates to `docker-compose.yml`
 
-to create a docker-compose.prod.yml file for docker swarm run:
+- to create a docker-compose.prod.yml file for docker swarm run:
 
 ```
 docker-compose config > docker-compose.prod.yml
