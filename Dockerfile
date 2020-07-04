@@ -7,4 +7,5 @@ RUN echo 'sendmail_path = "/usr/bin/msmtp -t"' > /usr/local/etc/php/conf.d/sendm
 
 ADD msmtp/msmtprc /etc/msmtprc
 
-RUN chown 33:33 /etc/msmtprc && chmod 600 /etc/msmtprc
+RUN chown www-data:www-data /etc/msmtprc && chmod 600 /etc/msmtprc
+
